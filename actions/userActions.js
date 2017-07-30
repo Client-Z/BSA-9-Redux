@@ -17,9 +17,9 @@ export function deleteUser(id){
     return action;
 }
 
-export function seachUser(seachValue){
+export function searchUser(seachValue){
     const action ={
-        type: "SERACH_USERS",
+        type: "SEARCH_USERS",
         seachValue: seachValue
     }
     return action;

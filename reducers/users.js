@@ -15,10 +15,10 @@ export default function(state = initialState, action){
 
             return  newState;
         }
-        case "SERACH_USERS": {
-            const { seachValue } = action;
+        case "SEARCH_USERS": {
+            const { searchValue } = action;
             let newState = state.filter((user)=>{
-                return user.name.includes(seachValue)
+                return user.name.includes(searchValue)
             });
             return  newState;
         }

@@ -35,7 +35,7 @@ class UsersContainer extends Component {
         return (
             <div className="container">
                 <UserAdd />
-                <UserList userList={this.props.stateFromReducer.userList} deleteUser={this.props.deleteUser}/>
+                <UserList userList={this.props.stateFromReducer.users} deleteUser={this.props.deleteUser}/>
             </div>
         );
     }
