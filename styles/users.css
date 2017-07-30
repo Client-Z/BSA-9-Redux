@@ -1,0 +1,49 @@
+.createUserForm {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.inputName {
+    width: 345px;
+    line-height: 30px;
+    font-size: 16px;
+    border: none;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.createUserForm .buttonSubmit {
+    width: 80px;
+    line-height: 35px;
+    border: none;
+    background-color: #4CCA72;
+    color: #fff;
+    font-size: 16px;
+}
+
+.user-list {
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
+    list-style-type: none;
+    background-color: #3b596e;
+    color: #fff;
+}
+
+.user {
+    line-height: 35px;
+}
+
+.buttonDelete {
+    background-color: #D53408;
+    border: none;
+    float: right;
+    color: white;
+    line-height: 35px;
+    font-size: 13px;
+}
+
+button:hover {
+    cursor: pointer;
+}
