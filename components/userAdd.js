@@ -10,7 +10,7 @@ class UserAdd extends Component {
         this.state = {
             name: '',
             placeholder: 'write here...'
-        }
+        };
 
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleUserNameChange = this.handleUserNameChange.bind(this);
@@ -29,7 +29,7 @@ class UserAdd extends Component {
             return ;
         }
 
-        this.props.onUserSubmit({ name: name});
+        this.props.add({ name: name, id: Date.now()});
         this.setState({name: '', placeholder: "Write your name, please!"})
     }
 
@@ -58,5 +58,5 @@ function mapStateToProps(state) {
         stateFromReducer: state
     };
 }
-const UserFormConnected = connect(mapStateToProps, mapDispatchToProps)(UserAdd);
-export default UserFormConnected;
+const UserAddConnected = connect(mapStateToProps, mapDispatchToProps)(UserAdd);
+export default UserAddConnected;

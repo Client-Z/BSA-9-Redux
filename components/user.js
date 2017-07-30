@@ -1,5 +1,4 @@
 import React, {Component}  from  "react";
-import {connect} from 'react-redux';
 
 
 class User extends Component {
@@ -17,18 +16,11 @@ class User extends Component {
     render() {
         return (
           <li className="user">
-            <span>{ this.props.currentUser.name }</span>
+            <span>{ this.props.name }</span>
               <button onClick={this.handleDeleteUser} className="buttonDelete">Delete User</button>
           </li>
         );
     }
 }
 
-const mapStateToProps = (state) => {
-    return{
-        currentUser: state.users.currentUser
-    }
-};
-
-
-export default connect(mapStateToProps)(User);
+export default User;

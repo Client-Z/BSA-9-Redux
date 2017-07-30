@@ -1,9 +1,8 @@
 import {combineReducers} from 'redux';
-import users from './userReducer';
+import users from './users';
 
 
-const rootReducer = combineReducers({
-    users
-});
-
-export default rootReducer;
+export default combineReducers({
+    users,
+    // userSeach
+})

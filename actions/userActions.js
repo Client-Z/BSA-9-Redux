@@ -1,21 +1,27 @@
-function createUser(user) {
-    return {type: 'CREATE_USER', user}
+export function add(user) {
+    const action = {
+        type: "ADD_USER",
+        name: user.name,
+        id: user.id,
+        seach: false
+    }
+    return action;
 }
 
-function deleteUser(id) {
-    return {type: 'DELETE_USER', id}
+
+export function deleteUser(id){
+    const action = {
+        type: "DELETE_USER",
+        id: id
+    }
+    return action;
 }
 
-function showCurrentUser(id) {
-    return {type: 'SHOW_CURRENT_USER', id}
-}
+export function seachUser(seachValue){
+    const action ={
+        type: "SERACH_USERS",
+        seachValue: seachValue
+    }
+    return action;
 
-function updateField(data) {
-    return {type: 'UPDATE_FIELD', data}
 }
-
-function filterUsers (query) {
-    return {type: 'FILTER_USERS', query}
-}
-
-export {createUser, deleteUser, showCurrentUser, updateField, filterUsers};
