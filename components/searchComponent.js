@@ -12,7 +12,7 @@ class SearchComponent extends Component {
                 <input type="text" placeholder="type text for search..."
                        className="search-input"
                        onChange={(e) => this.props.searchUser(e.target.value)}
-                       value={this.props.query}/>
+                       value={this.props.searchValue}/>
             </form>
         )
     }
@@ -24,13 +24,11 @@ const mapStateToProps = (state) => {
     }
 };
 
-
 const mapDispatchToProps = (dispatch) => {
     return{
         searchUser: bindActionCreators(searchUser, dispatch)
     }
 };
-
 
 export default connect(mapStateToProps, mapDispatchToProps)(SearchComponent);
 

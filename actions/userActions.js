@@ -3,7 +3,7 @@ export function add(user) {
         type: "ADD_USER",
         name: user.name,
         id: user.id,
-        seach: false
+        search: false
     }
     return action;
 }
