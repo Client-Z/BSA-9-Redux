@@ -6,6 +6,7 @@ import * as actions from "../actions/userActions.js";
 
 import UserAdd from './userAdd';
 import UserList from './userList';
+import  SearchComponent from './searchComponent';
 
 import '../styles/users.css';
 
@@ -34,6 +35,7 @@ class UsersContainer extends Component {
     render() {
         return (
             <div className="container">
+                <SearchComponent />
                 <UserAdd />
                 <UserList userList={this.props.stateFromReducer.users} deleteUser={this.props.deleteUser}/>
             </div>

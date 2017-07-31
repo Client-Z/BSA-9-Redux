@@ -17,10 +17,10 @@ export function deleteUser(id){
     return action;
 }
 
-export function searchUser(seachValue){
+export function searchUser(searchValue){
     const action ={
         type: "SEARCH_USERS",
-        seachValue: seachValue
+        searchValue: searchValue
     }
     return action;
 
