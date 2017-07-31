@@ -20,7 +20,7 @@ class SearchComponent extends Component {
 
 const mapStateToProps = (state) => {
     return{
-        query: state.users.query
+        searchValue: state.users.searchValue
     }
 };
 
