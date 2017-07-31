@@ -8,14 +8,12 @@ class SearchComponent extends Component {
 
     render() {
         return (
-            <div>
-                <form className="input-group search">
-                    <input type="text" placeholder="search..."
-                           onChange={(e) => this.props.searchUser(e.target.value)}
-                           value={this.props.query}/>
-                </form>
-            </div>
-
+            <form className="search">
+                <input type="text" placeholder="type text for search..."
+                       className="search-input"
+                       onChange={(e) => this.props.searchUser(e.target.value)}
+                       value={this.props.query}/>
+            </form>
         )
     }
 }
